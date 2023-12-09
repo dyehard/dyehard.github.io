@@ -22,5 +22,7 @@ function Moo(){
     var myText = document.getElementById("userText").textContent;
     var mySplitText = myText.split(".");
     myText = mySplitText.join("-Moo");
-    document.getElementById("userText").textContent = "myText";
+    myTest = "TEST!!!!!!";
+    document.getElementById("userText").textContent = myText;
+    console.log(myText);
 }
