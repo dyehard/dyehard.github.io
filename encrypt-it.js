@@ -17,7 +17,7 @@
   function init() {
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
-    
+    console.debug("Window Loaded!");
   }
 
   // Add any other functions in this area (you should not implement your
@@ -25,10 +25,30 @@
   // you shouldn't write an entire Java program in the main method).
 })();
 
-function handleClick(){
-  console.debug("Window Loaded!");
+function generateShiftCipher(){
+  
+  console.debug("Button clicked!");
+
+  var text = document.getElementById("input-text").value.toLowerCase();
+  let result = "";
+  
+  for (let i = 0; i < text.length; i++){
+    if (text[i] < 'a' || text[i] > 'z'){
+      result += text[i];
+    } 
+    else if (text[i] == 'z') {
+      result += 'a';
+    } 
+    else { 
+      let letter = text.charCodeAt(i);
+      let resultLetter = String.fromCharCode(letter + 1);
+      result += resultLetter;
+    }
+  }
+
+  document.getElementById("input-text").value = result;
 }
 
 function handleReset(){
-  document.getElementById("input-text").textContent.re
+  document.getElementById("input-text").value = "";
 }
