@@ -14,15 +14,15 @@ function removeStyle(){
     document.getElementById("userText").style.fontWeight = "normal";
     document.getElementById("userText").style.color = "";
     document.getElementById("userText").style.textDecoration = "";
+    document.getElementById("userText").style.textTransform = "none"
 }
 
 function Moo(){
     document.getElementById("userText").style.textTransform = "uppercase";
 
-    var myText = document.getElementById("userText").textContent;
+    var myText = document.getElementById("userText").value;
     var mySplitText = myText.split(".");
     myText = mySplitText.join("-Moo");
-    myTest = "TEST!!!!!!";
-    document.getElementById("userText").textContent.replace(myText);
-    console.debug("Test");
+
+    document.getElementById("userText").value = myText;
 }
