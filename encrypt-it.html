@@ -1,6 +1,6 @@
 <!DOCTYPE>
 <html>
-  <script type = "text/javascript" src = starter/encrypt-it.js></script>
+  <script type = "text/javascript" src = encrypt-it.js></script>
   <head>
     <title>Encrypt-It!</title>
     <link rel="stylesheet" href="style.css">
@@ -26,8 +26,8 @@
           </select>
         </p>
 
-        <button id="encrypt-it">Encrypt It!</button>
-        <button id="reset">Reset</button>
+        <button id="encrypt-it" onclick="handleClick()">Encrypt It!</button>
+        <button id="reset" onClick="handleReset()">Reset</button>
       </fieldset>
 
       <div id="result-area">

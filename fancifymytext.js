@@ -23,6 +23,6 @@ function Moo(){
     var mySplitText = myText.split(".");
     myText = mySplitText.join("-Moo");
     myTest = "TEST!!!!!!";
-    document.getElementById("userText").textContent = myText;
-    console.log(myText);
+    document.getElementById("userText").textContent.replace(myText);
+    console.debug("Test");
 }

@@ -1,9 +1,6 @@
 /*
  * Starter file 
  */
-
-console.debug("Window Loaded!");
-
 (function() {
   "use strict";
 
@@ -20,10 +17,18 @@ console.debug("Window Loaded!");
   function init() {
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
+    
   }
 
   // Add any other functions in this area (you should not implement your
   // entire program in the init function, for similar reasons that
   // you shouldn't write an entire Java program in the main method).
-
 })();
+
+function handleClick(){
+  console.debug("Window Loaded!");
+}
+
+function handleReset(){
+  document.getElementById("input-text").textContent.re
+}
